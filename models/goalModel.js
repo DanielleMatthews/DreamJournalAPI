@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 
 const goalSchmea = new mongoose.Schema({
     title: String,
-    descripton: String,
-    completeBy: Number,
+    description: String,
+    completeBy: Date,
     completed: Boolean
 })
 

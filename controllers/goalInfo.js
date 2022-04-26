@@ -8,21 +8,18 @@ router.get('/', (req, res)=>{
         res.json(foundGoals)
     })
 })
-
 //delete
 router.delete('/:id', (req, res)=>{
     Goals.findByIdAndRemove(req.params.id, (err, deletedGoals)=>{
         res.json(deletedGoals)
     })
 })
-
 //update
 router.put('/:id', (req, res)=>{
     Goals.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedGoals)=>{
         res.json(updatedGoals)
     })
 })
-
 //create
 router.post('/', (req, res)=>{
     Goals.create(req.body, (err, createdGoal)=>{
