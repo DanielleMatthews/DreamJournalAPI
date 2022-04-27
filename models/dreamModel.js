@@ -5,6 +5,7 @@ const dreamSchema = new mongoose.Schema({
     description: String,
     opinions: String,
     dayBefore: String,
+    image: String,
     date: Date
 })
 
